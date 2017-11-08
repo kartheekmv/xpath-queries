@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+          parser=new DOMParser();
+          if (window.XMLHttpRequest)
+          {
+            xmlhttp=new XMLHttpRequest();
+          }
+          xmlhttp.open("GET","books.xml",false);
+          xmlhttp.send();
+          xmlDoc = xmlhttp.responseXML;
+          var table = "<tr><th> Title </th><th>Author Name</th><th>Publication Date</th><th>Cost</th></tr>";
+          pathtitle='root/book[cost>25 and cost<100]/booktitle'
+		  pathcost='root/book[cost>25 and cost<100]/cost';
+		  pathname='root/book[cost>25 and cost<100]/authorname';
+		  pathdate='root/book[cost>25 and cost<100]/bookpublicationdate';
+		  if (xmlDoc.evaluate) {
+		  		 var nodestitle = xmlDoc.evaluate(pathtitle, xmlDoc, null, XPathResult.ANY_TYPE, null);
+		          var nodescost = xmlDoc.evaluate(pathcost, xmlDoc, null, XPathResult.ANY_TYPE, null);
+				  var nodesname = xmlDoc.evaluate(pathname, xmlDoc, null, XPathResult.ANY_TYPE, null);
+				  var nodesdate = xmlDoc.evaluate(pathdate, xmlDoc, null, XPathResult.ANY_TYPE, null);
+		          var resultcost = nodescost.iterateNext();
+		          var resulttitle = nodestitle.iterateNext();
+				  var resultname = nodesname.iterateNext();
+				  var resultdate = nodesdate.iterateNext();
+
+		          while (resultcost) {
+		          	  table += "<tr><td> " + resulttitle.childNodes[0].nodeValue + "</td><td> ";
+					  table +=  resultname.childNodes[0].nodeValue + "</td><td> ";
+		              table +=  resultdate.childNodes[0].nodeValue + "</td><td> ";
+		              table +=  resultcost.childNodes[0].nodeValue + "</td></tr>";
+		              resultcost = nodescost.iterateNext();
+					  resultname = nodesname.iterateNext();
+					  resultdate = nodesdate.iterateNext();
+					  resulttitle = nodestitle.iterateNext();
+		          } 
+        }
+		document.getElementById("demo").innerHTML = table;
+	}
+     </script>
+  </head>
+  
+  <body>
+	  <table id="demo" border="1" style="border-collapse: collapse">
+	   	
+	   </table>
+  </br>
+     <button type="button" onclick="myFunction()">Get Details</button>
+   </body>
+</html>

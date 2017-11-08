@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+          parser=new DOMParser();
+          if (window.XMLHttpRequest)
+          {
+            xmlhttp=new XMLHttpRequest();
+          }
+          xmlhttp.open("GET","books.xml",false);
+          xmlhttp.send();
+          xmlDoc = xmlhttp.responseXML;
+          var table = "<tr><th>Author Name</th></tr>";
+		  pathauthor='//book[number(translate(bookpublicationdate,"-",""))>20100101]/authorname';
+		   
+		  if (xmlDoc.evaluate) {
+		          var nodesauthor = xmlDoc.evaluate(pathauthor, xmlDoc, null, XPathResult.ANY_TYPE, null);
+				  var resultauthor = nodesauthor.iterateNext();
+				   
+		          while (resultauthor) {
+		              table += " <tr><td> " + resultauthor.childNodes[0].nodeValue+"</td></tr>";
+					  
+		              resultauthor = nodesauthor.iterateNext();
+					  
+		          } 
+        }
+		document.getElementById("demo").innerHTML = table;
+	}
+     </script>
+  </head>
+  
+  <body>
+	  <table id="demo" border="1" style="border-collapse: collapse">
+	   	
+	   </table>
+  </br>
+     <button type="button" onclick="myFunction()">Get Details</button>
+   </body>
+</html>

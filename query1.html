@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+          parser=new DOMParser();
+          if (window.XMLHttpRequest)
+          {
+            xmlhttp=new XMLHttpRequest();
+          }
+          xmlhttp.open("GET","books.xml",false);
+          xmlhttp.send();
+		  cityResults={};
+          xmlDoc = xmlhttp.responseXML;
+		  pathcost='root/book/cost';
+		  pathcity='root/book/publisher/publisheraddress/city';
+		  if (xmlDoc.evaluate) {
+		          var nodescost = xmlDoc.evaluate(pathcost, xmlDoc, null, XPathResult.ANY_TYPE, null);
+				  var nodescity = xmlDoc.evaluate(pathcity, xmlDoc, null, XPathResult.ANY_TYPE, null);
+		          var resultcost = nodescost.iterateNext();
+				  var resultcity = nodescity.iterateNext();
+		          while (resultcost) {
+					  
+					  cost=parseInt(resultcost.childNodes[0].nodeValue);
+					  city=resultcity.childNodes[0].nodeValue;
+					  if(city in cityResults){
+					  	cityResults[city] += cost;
+					  }else
+					  {
+					  	cityResults[city] = cost;
+					  }
+					  
+		              resultcost = nodescost.iterateNext();
+					  resultcity = nodescity.iterateNext();
+		          } 
+				  var keys= Object.keys(cityResults);
+				  var values = keys.map(function(res) { return cityResults[res]; });
+					table = "<tr><th>City</th><th>Cost</th>";
+				  for (i=0;i<values.length;i++){
+				  		table +="<tr><td>"+keys[i]+" </td><td>"+values[i] +"</td></tr>";
+				  }
+        }
+		document.getElementById("demo").innerHTML = table;
+	}
+     </script>
+  </head>
+  
+  <body>
+	   <table id="demo" border="1" style="border-collapse: collapse">
+	   	
+	   </table>
+  </br>
+     <button type="button" onclick="myFunction()">Get Details</button>
+   </body>
+</html>
