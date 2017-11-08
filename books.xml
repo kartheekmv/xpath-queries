@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="books.xsd">
+<book>
+	<booktitle>The Mind Cage</booktitle>
+	<authorname>A E Van Vogt</authorname>
+	<bookpublicationdate>2014-01-01</bookpublicationdate>
+	<cost currency="dollars">30</cost>
+	<publisher>
+		<publishername>Wiley Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Open And Say</booktitle>
+	<authorname>A A Attanasio</authorname>
+	<bookpublicationdate>2015-02-01</bookpublicationdate>
+	<cost currency="dollars">35</cost>
+	<publisher>
+		<publishername>Pearson Co</publishername>
+		<publisheraddress>
+			<streetname>7777 Lakeshore drive</streetname>
+			<city>Chicago</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Dart</booktitle>
+	<authorname>A A Attanasio</authorname>
+	<bookpublicationdate>2015-05-01</bookpublicationdate>
+	<cost currency="dollars">40</cost>
+	<publisher>
+		<publishername>Penguin Co</publishername>
+		<publisheraddress>
+			<streetname>8845 Lakeshore drive</streetname>
+			<city>Arizona</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Open And Say</booktitle>
+	<authorname>A A Attanasio</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Princeton Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>DRAGON and UNICORN MM</booktitle>
+	<authorname>A A Milne</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Wyvern</booktitle>
+	<authorname>A A Milne</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Wyvern2</booktitle>
+	<authorname>A A Milne</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Tigger's Little Book Of Diet And Exercise</booktitle>
+	<authorname>A A Milne</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Ohio</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Now We Are Six</booktitle>
+	<authorname>A B C Whipple</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Chant And Be Happy: The Power Of Mantra Meditation</booktitle>
+	<authorname>A C Crispin</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Vegas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Coming Back: The Science Of Reincarnation</booktitle>
+	<authorname>A C Crispin</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>The Science Of Reincarnation</booktitle>
+	<authorname>A C Cristopher</authorname>
+	<bookpublicationdate>2013-06-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Ohio drive</streetname>
+			<city>Ohio</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Coming Back Of Reincarnation</booktitle>
+	<authorname>A C Charlie</authorname>
+	<bookpublicationdate>2005-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Princeton</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Coming Science Of Reincarnation</booktitle>
+	<authorname>A Crispin</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Science Of Reincarnation</booktitle>
+	<authorname>Crispin</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Houston</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Reincarnation</booktitle>
+	<authorname>A C Crispin</authorname>
+	<bookpublicationdate>2016-01-01</bookpublicationdate>
+	<cost currency="dollars">40</cost>
+	<publisher>
+		<publishername>Princeton Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Comingsoon</booktitle>
+	<authorname>A C Crispin</authorname>
+	<bookpublicationdate>2017-01-01</bookpublicationdate>
+	<cost currency="dollars">50</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>The Sciences</booktitle>
+	<authorname>Roy</authorname>
+	<bookpublicationdate>2007-01-01</bookpublicationdate>
+	<cost currency="dollars">10</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Mutants</booktitle>
+	<authorname>A C Ryan</authorname>
+	<bookpublicationdate>2013-08-01</bookpublicationdate>
+	<cost currency="dollars">20</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+<book>
+	<booktitle>Carnival</booktitle>
+	<authorname>Tyler</authorname>
+	<bookpublicationdate>2013-01-01</bookpublicationdate>
+	<cost currency="dollars">120</cost>
+	<publisher>
+		<publishername>Oxford Co</publishername>
+		<publisheraddress>
+			<streetname>1350 Lakeshore drive</streetname>
+			<city>Dallas</city>
+			<zipcode>75252</zipcode>
+			<country>US</country>
+		</publisheraddress>
+	</publisher>
+</book>
+
+
+
+</root>
